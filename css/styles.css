@@ -13242,28 +13242,42 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: grey;
 }
 
-.mapa-local{
+.mapa-local {
   text-align: center;
 }
 
-.ubicacion{
+.ubicacion {
   padding: 2rem;
   padding-top: 3rem;
   background-color: RGBA(248, 249, 250, var(--bs-bg-opacity, 1))
 }
 
-.local-ubic{
+.local-ubic {
   display: flex;
   justify-content: space-around;
 }
 
-.mapa{
+.mapa {
   border-radius: 100%;
-  width:auto; 
-  height:18rem;
-  border: 0.2rem solid rgb(255,194,14);
+  width: auto;
+  height: 18rem;
+  border: 0.2rem solid rgb(255, 194, 14);
 }
 
-.text-mapa{
+.text-mapa {
   padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+
+  .local-ubic {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-mapa {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
 }
