@@ -13275,6 +13275,10 @@ section#contact form#contactForm :-ms-input-placeholder {
     flex-direction: column;
   }
 
+  .Copyright{
+    padding-top: 1rem;
+  }
+
 }
 
 .Copyright{
