@@ -12642,7 +12642,7 @@ p {
 
 .page-section h3.section-subheading,
 .page-section .section-subheading.h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
@@ -13269,6 +13269,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding-top: 1rem;
 }
 
+.equipo-p{
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
 
   .local-ubic {
@@ -13276,7 +13280,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 
   .Copyright{
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    font-size: 1rem;
   }
 
 }
