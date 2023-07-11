@@ -379,72 +379,40 @@
                     Sé parte de LA FUERZA DEL CAMBIO que Moreno necesita
                 </h3>
             </div>
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            
+            <!--formulario--><br>
+            <form id="contactForm" action="https://formsubmit.co/ramnad711@gmail.com" method="POST">
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
                             <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Nombre *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido</div>
+                            <input class="form-control" id="name" type="text" placeholder="Nombre *" name="name" required />
                         </div>
                         <div class="form-group">
                             <!-- Email address input-->
-                            <input class="form-control" id="email" type="email" placeholder="Email *"
-                                data-sb-validations="required,email" />
-                            <div class="invalid-feedback" data-sb-feedback="email:required">El email es requerido.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">El nombre no es valido</div>
+                            <input class="form-control" id="email" type="email" placeholder="Email *" name="email" required/>
                         </div>
                         <div class="form-group mb-md-0">
                             <!-- Phone number input-->
-                            <input class="form-control" id="phone" type="tel" placeholder="Celular *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">El celular es requerido
-                            </div>
+                            <input class="form-control" id="phone" type="number" placeholder="Celular *" name="cel" required />
                         </div>
                     </div>
+                    
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
                             <!-- Message input-->
-                            <textarea class="form-control" id="message"
-                                placeholder="Contanos si queres ser fiscal, voluntario, recibir información, o bien contarnos tu propuesta *"
-                                data-sb-validations="required"></textarea>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Tu mensaje es requerido.
-                            </div>
+                            <textarea class="form-control" id="message" placeholder="Contanos si queres ser fiscal, voluntario, recibir información, o bien contarnos tu propuesta *" name="comments" required></textarea>  
                         </div>
                     </div>
                 </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center text-white mb-3">
-                        <div class="fw-bolder">¡Envío de formulario exitoso!</div>
-                        Para activar este formulario, regístrese en
-                        <br />
-                        <a
-                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                    </div>
-                </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
-                </div>
                 <!-- Submit Button-->
-                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
-                        id="submitButton" type="submit">Me sumo</button></div>
+                <div class="text-center"><button class="btn btn-primary btn-xl"
+                        id="submitButton" type="submit">Me sumo</button>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+                </div>  
             </form>
+
             <div class="acepto">
                 * Quiero que me contacte el equipo de Gisele Agostinelli
             </div>
@@ -515,7 +483,7 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Seguridad</h2>
+                                <h2 class="text-uppercase" style="font-size: 2.5rem;">Seguridad</h2>
                                 <p class="item-intro text-muted">Ojos en Alerta</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
                                 <!--PONER VIDEO-->
@@ -554,7 +522,7 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Niñez</h2>
+                                <h2 class="text-uppercase" style="font-size: 2.5rem;">Niñez</h2>
                                 <p class="item-intro text-muted">Centro de Desarrollo Infanto Familiar</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
                                 <p>Estamos en uno de los Centros de Desarrollo Infanto Familiar de San Miguel. Desde el
@@ -589,7 +557,7 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
+                                <h2 class="text-uppercase" style="font-size: 2.5rem;">Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
@@ -620,7 +588,7 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
+                                <h2 class="text-uppercase" style="font-size: 2.5rem;">Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
@@ -651,7 +619,7 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
+                                <h2 class="text-uppercase" style="font-size: 2.5rem;">Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
@@ -682,7 +650,7 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
+                                <h2 class="text-uppercase" style="font-size: 2.5rem;">Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur

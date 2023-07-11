@@ -426,13 +426,14 @@ select:disabled {
   ):not([type="time"])::-webkit-calendar-picker-indicator {
   display: none !important;
 }
-
+ /*
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+ -webkit-appearance: button;
 }
+*/
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -489,12 +490,12 @@ legend + * {
 ::-webkit-inner-spin-button {
   height: auto;
 }
-
+/*
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
 }
-
+*/
 /* rtl:raw:
 [type="tel"],
 [type="url"],
@@ -510,12 +511,12 @@ legend + * {
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
-
+/*
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
 }
-
+*/
 output {
   display: inline-block;
 }
@@ -13487,6 +13488,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding-top: 1.5rem;
     font-size: 1rem;
   }
+
   /*
   #whatsapp {
     position: fixed;
