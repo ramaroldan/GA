@@ -13465,14 +13465,19 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .mapa {
   border-radius: 100%;
-  width: 14rem;
-  height: 14rem;
+  width: 10rem;
+  height: 10rem;
   border: 0.2rem solid rgb(255, 194, 14);
   margin-top: 2.8rem;
 }
 
 .text-mapa {
   padding-top: 1rem;
+  font-size: medium;
+}
+
+.text-mapa-2{
+  font-size: small;
 }
 
 .equipo-p {
@@ -13529,4 +13534,23 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .Copyright {
   padding-top: 1rem;
+}
+
+/*Modal*/
+/*editar PopUp con backdrop*/
+#modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+#modal{
+  max-width: 50rem;
+}
+
+#cerrar-modal{
+  margin-left: 45.7rem;
+  margin-bottom: 1rem;
+}
+
+#img-modal{
+  width: 100%;
 }
