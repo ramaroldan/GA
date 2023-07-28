@@ -50,14 +50,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-const btnAbrirModal = document.querySelector("#abrir-modal");
-const btnCerrarModal = document.querySelector("#cerrar-modal");
-const modal = document.querySelector("#modal");
+/*Pop Up */
+window.addEventListener('load', function () {
+  const popup = document.getElementById('popup');
 
-btnAbrirModal.addEventListener("click", () => {
-  modal.showModal();
-});
+  // Mostrar el PopUp al ingresar
+  popup.style.display = 'block';
 
-btnCerrarModal.addEventListener("click", () => {
-  modal.close();
+  document.getElementById('closePopupBtn').addEventListener('click', function () {
+    // Ocultar el PopUp al hacer clic en la "x"
+    popup.style.display = 'none';
+  });
 });

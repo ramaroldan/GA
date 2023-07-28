@@ -13476,12 +13476,53 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: medium;
 }
 
-.text-mapa-2{
+.text-mapa-2 {
   font-size: small;
 }
 
 .equipo-p {
   font-weight: bold;
+}
+
+.Copyright {
+  padding-top: 1rem;
+}
+
+/*PopUp*/
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: -1rem;
+  right: 0rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+#img-modal {
+  width: 25rem; /*ancho*/
+  height: 25rem; /*alto*/
 }
 
 @media (max-width: 768px) {
@@ -13494,67 +13535,8 @@ section#contact form#contactForm :-ms-input-placeholder {
     font-size: 1rem;
   }
 
-  /*
-  #whatsapp {
-    position: fixed;
-    right: 1%;
-    bottom: 3%;
-    cursor: pointer;
+  #img-modal {
+    width: 15rem; /*ancho*/
+    height: 15rem; /*alto*/
   }
-  
-  #ico-whatsapp {
-    font-size: 2rem;
-    color: rgb(37, 211, 102);
-  }
-
-  #instagram {
-    position: fixed;
-    right: 1%;
-    bottom: 10.5%;
-    cursor: pointer;
-  }
-  
-  #ico-instagram {
-    height: 1.9rem;
-  }
-
-  #facebook {
-    position: fixed;
-    right: 1%;
-    bottom: 17.5%;
-    cursor: pointer;
-  }
-  
-  #ico-facebook {
-    font-size: 2rem;
-    color: rgb(1, 101, 225);
-  }
-  */
-}
-
-.Copyright {
-  padding-top: 1rem;
-}
-
-/*Modal*/
-/*editar PopUp con backdrop*/
-#modal::backdrop {
-  background-color: rgba(0, 0, 0, 0.55);
-}
-
-#modal{
-  max-width: 50rem;
-}
-
-#cerrar-modal{
-  margin-left: 45.7rem;
-  margin-bottom: 1rem;
-}
-
-#img-modal{
-  width: 100%;
-}
-
-.propuestas-video{
-  padding-bottom: 2rem;
 }
