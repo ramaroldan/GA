@@ -13525,6 +13525,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 25rem; /*alto*/
 }
 
+
+/*Propuestas*/
+.propuesta-video{
+  height: 30rem;
+  padding-bottom: 1.5rem;
+}
+
 @media (max-width: 768px) {
   .local-ubic {
     flex-direction: column;
@@ -13538,5 +13545,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   #img-modal {
     width: 15rem; /*ancho*/
     height: 15rem; /*alto*/
+  }
+
+  .propuesta-video{
+    height: 30rem;
+    width: 16rem;
   }
 }
